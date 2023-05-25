@@ -179,6 +179,9 @@ void Graph::draw(DisplayBuffer *buff, uint16_t x_offset, uint16_t y_offset, Colo
       }
     }
   }
+
+  this->current_min_range_ = ymin;
+  this->current_max_range_ = ymax;
 }
 
 /// Determine the best coordinates of drawing text + lines

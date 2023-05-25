@@ -158,6 +158,8 @@ class Graph : public Component {
   uint32_t get_duration() { return duration_; }
   uint32_t get_width() { return width_; }
   uint32_t get_height() { return height_; }
+  float get_current_min_range() { return current_min_range_; }
+  float get_current_max_range() { return current_max_range_; }
 
  protected:
   uint32_t duration_;  /// in seconds
@@ -167,6 +169,8 @@ class Graph : public Component {
   float max_value_{NAN};
   float min_range_{1.0};
   float max_range_{NAN};
+  float current_min_range_{NAN};
+  float current_max_range_{NAN};
   float gridspacing_x_{NAN};
   float gridspacing_y_{NAN};
   bool border_{true};
